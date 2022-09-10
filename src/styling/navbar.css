@@ -1,0 +1,101 @@
+.navbar {
+    position: relative;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    bottom: auto;
+
+    display: flex;
+    height: fit-content;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2em;
+
+    /* display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    flex: 1;
+    flex-direction: row;
+    max-width: 100%;
+    max-height: 3vw;
+    height: fit-content;
+    padding: 1vw 0;
+    background-color: darkslateblue;
+    align-items: center; */
+}
+
+.width-container {
+    display: block;
+    width: 85%;
+    max-width: 1200px;
+    margin-top: 15px;
+    margin-right: 5%;
+    margin-left: 5%;
+    justify-content: space-around;
+}
+
+.nav-main {
+    display: inline-flex;
+    width: fit-content;
+    color: darkgray;
+
+    font-size: 1.25em;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    white-space: nowrap;
+
+    /* display: flex;
+    font-size: 2vw;
+    text-decoration: none;
+    color: gray;
+    margin-top: auto;
+    margin-bottom: auto; */
+    /* white-space: nowrap; */
+}
+.nav-main:hover {
+    color: azure;
+}
+.h1.nav-main {
+    display: inline-flex;
+}
+
+.nav-logo {
+    width: 20%;
+    height: auto;
+    margin-right: 2%;
+}
+
+.nav-menu {
+    /* width: fit-content; */
+    /* position: relative; */
+    float: right;
+    display: inline-flex;
+    /* margin-left:auto; */
+    margin-inline: 5%;
+    /* margin: auto 5%; */
+
+    margin-top: 0;
+    margin-bottom: auto;
+}
+
+.nav-link {
+    flex: 1;
+    min-width: 0;
+    width: fit-content;
+    height: fit-content;
+    color: darkgray;
+    text-decoration: none;
+    text-align: center;
+
+    padding-inline: 5%;
+
+    white-space: nowrap;
+}
+.nav-link:hover {
+    color:aliceblue;
+    text-decoration: underline;
+}
