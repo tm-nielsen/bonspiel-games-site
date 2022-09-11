@@ -32,7 +32,7 @@ const Starscape = ({densityRatio = 0.5, sizeLimit = 5, defaultAlpha = 0.5}) => {
         canvasRef.current.height
       )
       starsRef.current.forEach(star => {
-        contextRef.current.fillStyle = `hsla(0, 100%, 100%, ${star.alpha})`
+        contextRef.current.fillStyle = `hsla(0, 100%, 100%, 1)`
         contextRef.current.beginPath()
         contextRef.current.arc(star.x, star.y, star.size / 2, 0, Math.PI * 2)
         contextRef.current.fill()

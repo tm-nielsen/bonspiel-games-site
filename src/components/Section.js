@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Section = ({backgroundColor, component}) => {
+const Section = ({component, backgroundColor}) => {
 
-    return <div style={{backgroundColor: {backgroundColor}}}>
+    return <div style={{backgroundColor: backgroundColor}}>
         {component}
     </div>
 }

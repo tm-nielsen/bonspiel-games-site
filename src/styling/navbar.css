@@ -1,9 +1,10 @@
 .navbar {
-    position: relative;
+    position: fixed;
     left: 0%;
     top: 0%;
     right: 0%;
     bottom: auto;
+    z-index: 3;
 
     display: flex;
     height: fit-content;
@@ -27,15 +28,15 @@
     align-items: center; */
 }
 
-.width-container {
-    display: block;
-    width: 85%;
-    max-width: 1200px;
-    margin-top: 15px;
-    margin-right: 5%;
-    margin-left: 5%;
-    justify-content: space-around;
+.nav-bg{
+    position: fixed;
+    height: 4em;
+    width: 100%;
+    top: 0;
+    z-index: -1;
+    background-color: #111;
 }
+
 
 .nav-main {
     display: inline-flex;
@@ -69,18 +70,30 @@
     margin-right: 2%;
 }
 
-.nav-menu {
+nav {
+    flex: 1;
     /* width: fit-content; */
     /* position: relative; */
-    float: right;
-    display: inline-flex;
+    /* float: right; */
+    /* display: inline-flex; */
     /* margin-left:auto; */
     margin-inline: 5%;
     /* margin: auto 5%; */
 
-    margin-top: 0;
-    margin-bottom: auto;
+    /* margin-top: 0; */
+    /* margin-bottom: auto; */
 }
+ul {
+    display: inline-flex;
+    float: right;
+    justify-content: flex-end;
+}
+li {
+    display: inline-block;
+    padding-inline: 1rem;
+    text-align: center;
+}
+
 
 .nav-link {
     flex: 1;

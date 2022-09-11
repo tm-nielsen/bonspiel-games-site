@@ -1,13 +1,16 @@
 import React from "react";
+import Header from "../components/Header";
 import Section from "../components/Section";
 import '../styling/home.css'
 import gameplayGif from '../images/gameplay.gif'
-import mapGif from '../images/map_select.gif'
+import mapGif from '../images/map select.gif'
+import titleLogo from '../images/shiny logo.png'
 // import trainingIm from '../images/side-by-side-training.png'
 
 const Home = () => {
     return <div className="home">
-        <Section backgroundColor='rgba(52, 52, 60, 0.1)' component={
+        <Header text={''} backgroundImage={titleLogo}/>
+        <Section backgroundColor='rgba(200, 200, 255, 0.3)' component={
             <div className="section">
                 <h1 className="section-header">Section 1</h1>
                 <img src={gameplayGif} alt="gameplay gif" className="section-image" />
@@ -19,7 +22,7 @@ const Home = () => {
                 </p>
             </div>
         }/>
-        <Section backgroundColor='rgba(52, 52, 60, 0.1)' component={
+        <Section backgroundColor='rgba(52, 52, 60, 0.6)' component={
             <div className="section">
                 <h1 className="section-header">Section 2</h1>
                 <img src={mapGif} alt="map selection gif" className="section-image" />
