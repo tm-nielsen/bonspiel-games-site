@@ -39,9 +39,14 @@ const Starscape = ({densityRatio = 0.5, sizeLimit = 5, defaultAlpha = 0.5}) => {
       })
     }
 
+    window.addEventListener("resize", ()=>{
+      LOAD()
+      RENDER()
+    }, false)
+
     LOAD()
     RENDER()
-  }, [])
+  }, [defaultAlpha, densityRatio, sizeLimit])
 
   
 

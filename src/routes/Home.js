@@ -10,24 +10,23 @@ import titleLogo from '../images/shiny logo.png'
 const Home = () => {
     return <div className="home">
         <Header text={''} backgroundImage={titleLogo}/>
-        <Section backgroundColor='rgba(200, 200, 255, 0.3)' component={
+        <Section  component={
             <div className="section">
                 <h1 className="section-header">Section 1</h1>
                 <img src={gameplayGif} alt="gameplay gif" className="section-image" />
                 <p className="section-text">
-                    This is section 1, where I will talk about all the gameplay and stuff. General explanation and all that good junk
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum, iste doloremque! Sed voluptas cumque ad? Quaerat, aperiam! In tenetur quia qui, iste animi, quod cumque quasi commodi labore exercitationem reiciendis!
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae nobis excepturi, quisquam iure iusto aperiam enim molestiae perspiciatis officia incidunt et sed id architecto sapiente earum temporibus quis esse sit!
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste ea nostrum, ipsum quam rem tempore ipsa natus quisquam voluptas reprehenderit culpa soluta maxime, inventore quia commodi, ratione dolore aperiam porro.
+                    <b><i>Curl!</i></b> is a first-of-tis-kind video game, built from the ground up for accessibility including integrated control through Brain-Computer-Interface (BCI), switch-access or other input schemes in addition to traditional controllers
                 </p>
             </div>
         }/>
-        <Section backgroundColor='rgba(52, 52, 60, 0.6)' component={
+        <Section  component={
             <div className="section">
-                <h1 className="section-header">Section 2</h1>
+                <h1 className="section-header">The Game</h1>
                 <img src={mapGif} alt="map selection gif" className="section-image" />
                 <p className="section-text">
                     This is section 2, where I will talk briefly about the maps
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt obcaecati odio, veritatis omnis nam quidem! Maxime, iusto consequuntur doloremque deserunt architecto aliquid, accusamus similique voluptates dolor deleniti reprehenderit est nemo.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus vel ducimus maiores. Sed excepturi culpa expedita eaque provident ratione aut vero iure nostrum neque doloribus error suscipit, modi earum ducimus!
                 </p>
             </div>
         }/>
@@ -42,7 +41,6 @@ const Home = () => {
                 </p>
             </div>
         }/> */}
-        <p className="home-desc">Test paragraph</p>
     </div>
 }
 

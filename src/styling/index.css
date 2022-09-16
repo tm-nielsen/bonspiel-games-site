@@ -26,9 +26,23 @@ code {
   justify-content: space-around;
 }
 
+.width-container-flat {
+  display: flex;
+  width: 85%;
+  max-width: 1200px;
+  margin: auto;
+  justify-content: space-around;
+}
+
 .flex-container {
   display: flex;
   flex: 1;
   justify-content: space-evenly;
   align-items: center;
+}
+
+h1 {
+    font-size: 6em;
+    font-family: 'Milocha', sans-serif;
+    letter-spacing: 0.1em;
 }

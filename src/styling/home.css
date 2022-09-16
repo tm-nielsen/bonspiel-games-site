@@ -12,6 +12,11 @@
     line-height: 1em;
 }
 
+.section-parent {
+    border-top: 0.5rem dashed aliceblue;
+    background-color: #0009;
+}
+
 .section {
     height: fit-content;
     min-height: 250px;
@@ -23,19 +28,33 @@
 .section-header{
     display: inline-flex;
     font-weight: bolder;
-    font-size: 200%;
-    margin-top: 0;
+    font-size: 2em;
+    /* margin-top: 0; */
 }
 
 .section-image {
     width: 20em;
     height: auto;
-    position: relative;
     float: right;
-    padding: 0 5%;
+    position: relative;
+    margin: 2.5% 5%;
+    outline: 0.25em solid aliceblue;
+    outline-offset: 0.25em;
 }
 
 .section-text {
     justify-content: space-around;
     line-height: normal;
+    font-size: 1.5em;
+}
+
+.right {
+    float: right;
+    justify-self: right;
+    justify-content: right;
+}
+.left {
+    float: left;
+    justify-self: left;
+    justify-content: left;
 }
