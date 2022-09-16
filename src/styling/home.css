@@ -13,8 +13,14 @@
 }
 
 .section-parent {
-    border-top: 0.5rem dashed aliceblue;
     background-color: #0009;
+}
+
+.divider {
+    width: 100%;
+    height: 0;
+    
+    border-top: 0.5rem dashed aliceblue;
 }
 
 .section {
@@ -48,13 +54,6 @@
     font-size: 1.5em;
 }
 
-.right {
-    float: right;
-    justify-self: right;
-    justify-content: right;
-}
 .left {
     float: left;
-    justify-self: left;
-    justify-content: left;
 }

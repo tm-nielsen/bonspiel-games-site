@@ -45,13 +45,18 @@ const Navbar = () => {
             <nav>
                 <ul className="nav-list">
                     <li>
-                    <Link to='/#team' className="nav-link">
-                        Team
+                    <Link to='/' className="nav-link">
+                        Curl
                     </Link>
                     </li>
                     <li>
-                    <Link to='/#news' className="nav-link">
-                        News
+                    <Link to='/#faq' className="nav-link">
+                        FAQ
+                    </Link>
+                    </li>
+                    <li>
+                    <Link to='/#team' className="nav-link">
+                        Team
                     </Link>
                     </li>
                     <li>
