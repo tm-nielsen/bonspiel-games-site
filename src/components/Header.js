@@ -1,7 +1,7 @@
 import React, {useState, useEffect, useRef} from 'react'
 import '../styling/header.css'
 
-const Header = ({title, backgroundImage}) => {
+const Header = ({title, backgroundImage, id}) => {
     const [opacity, setOpacity] = useState(1)
 
     const ref = useRef(null)
@@ -30,9 +30,9 @@ const Header = ({title, backgroundImage}) => {
         }
     })
 
-  return <div ref={ref} className="header" style={{opacity: opacity}}>
+  return <div ref={ref} className="header" style={{opacity: opacity}} id={id}>
     <div className="width-container">
-        {backgroundImage? <img src={backgroundImage} alt="header image" />
+        {backgroundImage? <img src={backgroundImage} alt="header" />
         : <h1>{title}</h1>}
     </div>
   </div>

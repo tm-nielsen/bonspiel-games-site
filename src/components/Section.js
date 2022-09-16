@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Section = ({component, backgroundColor}) => {
+const Section = ({children, id}) => {
 
-    return <div style={{backgroundColor: backgroundColor}} className="section-parent">
-        {component}
+    return <div className="section" id={id}>
+        {children}
     </div>
 }
 

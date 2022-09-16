@@ -11,7 +11,7 @@ const ShortBCIExplanation = () => {
       <br /><br />
       We can use this rough idea of what's happening to determine if your brain seems more "off" or more "on" like a big button.
       <br /><br />
-      <b><i>Curl!</i></b> is a special game that can be played with your brain button
+      <b><i>Curl!</i></b> is a special game that can be played with your brain button, this is important for people that can't use a controller or keyboard to play games.
     </p>
   </div>
 }

@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import '../styling/navbar.css'
 import logo from '../images/favicon.ico'
 
@@ -37,32 +37,32 @@ const Navbar = () => {
         <div className="nav-bg" style={{opacity: opacity}}/>
         <div className="width-container">
             <div className="flex-container">
-            <Link to='/' className="nav-main">
+            <a href='/#home' className="nav-main">
                 <img src={logo} alt="logo" className="nav-logo" />
                 <h1 className="nav-main">Bonspiel Games</h1>
-            </Link></div>
+            </a></div>
             <div className="flex-container">
             <nav>
                 <ul className="nav-list">
                     <li>
-                    <Link to='/' className="nav-link">
-                        Curl
-                    </Link>
+                        <a href='/#home' className="nav-link">
+                            Curl
+                        </a>
                     </li>
                     <li>
-                    <Link to='/#faq' className="nav-link">
+                    <a href='/#faq' className="nav-link">
                         FAQ
-                    </Link>
+                    </a>
                     </li>
                     <li>
-                    <Link to='/#team' className="nav-link">
+                    <a href='/#team' className="nav-link">
                         Team
-                    </Link>
+                    </a>
                     </li>
                     <li>
-                    <Link to='bci' className="nav-link">
+                    <a href='bci' className="nav-link">
                         About BCI
-                    </Link>
+                    </a>
                     </li>
                 </ul>
             </nav></div>

@@ -9,6 +9,8 @@ body {
     sans-serif; */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  scroll-behavior: smooth;
 }
 
 code {
@@ -45,4 +47,9 @@ h1 {
     font-size: 6em;
     font-family: 'Milocha', sans-serif;
     letter-spacing: 0.1em;
+}
+
+html {
+  
+  scroll-behavior: smooth;
 }
