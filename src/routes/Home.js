@@ -2,9 +2,11 @@ import React from "react";
 import Header from "../components/Header";
 import { Section, Title } from "../components/Page Elements";
 import '../styling/home.css'
-import gameplayGif from '../images/gameplay-small.gif'
+import gameplayWebm from '../images/gameplay.webm'
+import gameplayMp4 from '../images/gameplay.mp4'
 import mapGif from '../images/map select.gif'
-import bciGif from '../images/team_and_char-small.gif'
+import bciWebm from '../images/team_and_char.webm'
+import bciMp4 from '../images/team_and_char.mp4'
 import trainingIm from '../images/side-by-side-training.png'
 import titleLogo from '../images/shiny logo.png'
 // import trainingIm from '../images/side-by-side-training.png'
@@ -19,7 +21,11 @@ const Home = () => {
         </Section>
         <Section>
             {/* <h1 className="section-header">Curling in Space!?!</h1> */}
-            <img src={gameplayGif} alt="gameplay" className="section-image left" />
+            <video autoplay loop muted playsInline alt="gameplay" className="section-image left">
+                <source src={gameplayWebm} type="video/webm"/>
+                <source src={gameplayMp4} type="video/mp4"/>
+                Your browser does not support the video tag
+            </video>
             <p className="section-body">
                 It’s a wacky mishmash of strategical sporting action that up to 4 players can enjoy. Slide ahead of your foes with a foolproof strategy. Weave each stone carefully down the ice to land victory in your orbit. Astound the crowd with explodinating, zappifying, and mind-discombobulating uber-cool super-stones! What’s that? Curling doesn’t have explosions? Sure, your primitive Earth curling might not, but <Title/> does!
             </p>
@@ -54,7 +60,11 @@ const Home = () => {
             <div className="right-container">
                 <h1 className="section-header">Switch Accessibe Menus and UI</h1>
             </div>
-            <img src={bciGif} alt="bci menu" className="section-image left"/>
+            <video autoplay loop muted playsInline alt="gameplay" className="section-image left">
+                <source src={bciWebm} type="video/webm"/>
+                <source src={bciMp4} type="video/mp4"/>
+                Your browser does not support the video tag
+            </video>
             <p className="section-body">
                 Menus and UI systems designed for use via switch-scanning selection, compatible with simple BCI alternative access.
             </p>
