@@ -21,7 +21,7 @@ const Home = () => {
         </Section>
         <Section>
             {/* <h1 className="section-header">Curling in Space!?!</h1> */}
-            <video autoplay loop muted playsInline alt="gameplay" className="section-image left">
+            <video autoPlay loop muted playsInline alt="gameplay" className="section-image left">
                 <source src={gameplayWebm} type="video/webm"/>
                 <source src={gameplayMp4} type="video/mp4"/>
                 Your browser does not support the video tag
@@ -60,7 +60,7 @@ const Home = () => {
             <div className="right-container">
                 <h1 className="section-header">Switch Accessibe Menus and UI</h1>
             </div>
-            <video autoplay loop muted playsInline alt="gameplay" className="section-image left">
+            <video autoPlay loop muted playsInline alt="gameplay" className="section-image left">
                 <source src={bciWebm} type="video/webm"/>
                 <source src={bciMp4} type="video/mp4"/>
                 Your browser does not support the video tag
