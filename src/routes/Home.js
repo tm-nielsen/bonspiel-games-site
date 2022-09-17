@@ -21,7 +21,7 @@ const Home = () => {
         </Section>
         <Section>
             {/* <h1 className="section-header">Curling in Space!?!</h1> */}
-            <video autoPlay loop muted playsInline alt="gameplay" className="section-image left">
+            <video autoPlay loop muted playsInline alt="showcase of gameplay" className="section-image left">
                 <source src={gameplayWebm} type="video/webm"/>
                 <source src={gameplayMp4} type="video/mp4"/>
                 Your browser does not support the video tag
@@ -33,7 +33,7 @@ const Home = () => {
         
         <Section>
             <h1 className="section-header">Strange Places and Silly Faces</h1>
-            <img src={mapGif} alt="map selection" className="section-image" />
+            <img src={mapGif} alt="showcase of the different maps" className="section-image" />
             <p className="section-body">
                 The galaxy is a huge and wonderfully weird place. A zany lineup of competitors face off on all manner of slick sheets from across the universe! Try to hit the button on the tongue of a gigantic, homely space worm, or speed through the cosmos on the front of a comet!
             </p>
@@ -50,7 +50,7 @@ const Home = () => {
         
         <Section>
             <h1 className="section-header">Integrated BCI!</h1>
-            <img src={trainingIm} alt="bci training" className="section-image" />
+            <img src={trainingIm} alt="demonstration of the integrated BCI training scenario" className="section-image" />
             <p className="section-body">
                 Brain-computer interface (BCI) technology enables individuals to control a computer using their thoughts. <Title/> is the first of its kind to enable full BCI integration directly within the game, including headset connection, calibration, training, and direct thought-to-action play. To support community and local play between all players, multiple BCI headsets can be used to control separate characters on the same local computer.
             </p>
@@ -60,7 +60,7 @@ const Home = () => {
             <div className="right-container">
                 <h1 className="section-header">Switch Accessibe Menus and UI</h1>
             </div>
-            <video autoPlay loop muted playsInline alt="gameplay" className="section-image left">
+            <video autoPlay loop muted playsInline alt="users navigating switch accessible menus" className="section-image left">
                 <source src={bciWebm} type="video/webm"/>
                 <source src={bciMp4} type="video/mp4"/>
                 Your browser does not support the video tag

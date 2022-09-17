@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {BiShapeTriangle, BiShapeSquare, BiShapePolygon} from 'react-icons/bi'
 import Header from "../components/Header";
 import ShortBCIExplanation from "../components/bci explanations/Short Explanation";
@@ -18,6 +18,8 @@ const BCIPage = () => {
     }
 
     const GetButtonClass = (index) => selectedExplanation===index?"explanation-option-selected":"explanation-option"
+
+    useEffect(() => window.scrollTo(0, 0), [])
 
     return <div>
         <Header className="" title={"ABOUT BCI"}/>
