@@ -45,7 +45,7 @@ const Navbar = () => {
             <nav>
                 <ul className="nav-list">
                     <li>
-                    <a href='/#home' className="nav-link">
+                    <a href='/#' className="nav-link">
                         Curl
                     </a>
                     </li>

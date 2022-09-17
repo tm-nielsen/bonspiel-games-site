@@ -10,7 +10,7 @@ import titleLogo from '../images/shiny logo.png'
 // import trainingIm from '../images/side-by-side-training.png'
 
 const Home = () => {
-    return <div className="home" id="home">
+    return <div className="home">
         <Header text={''} backgroundImage={titleLogo} id="header"/>
         <Section>
                 <p className="section-body">
