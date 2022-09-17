@@ -109,7 +109,7 @@ const Home = () => {
             <div className="scroll-target" id="team"/>
             <h1 className="section-header">The Team</h1>
             <p className="section-body">
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, minima harum! Pariatur aperiam numquam distinctio reiciendis error nesciunt aut aspernatur tempore porro totam, sit illo provident odit asperiores ex quos!
+                We are a small collective of artists, musicians and programmers that seek to bring the medium of video games to those who might otherwise be unable to experience it. Through accessibility led design and cutting-edge technology, we want to expand the definition of who gets to play.
             </p>
         </Section>
         
