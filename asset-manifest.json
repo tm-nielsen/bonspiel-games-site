@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bbd5732d.css",
-    "main.js": "/static/js/main.58dfb52a.js",
+    "main.js": "/static/js/main.d81882e3.js",
     "static/media/gameplay.gif": "/static/media/gameplay.14548c267bee6eeef2c9.gif",
     "static/media/team_and_char.gif": "/static/media/team_and_char.3407d5d3e50f3e375b2a.gif",
     "static/media/map select.gif": "/static/media/map select.f5be2cc558fa5153746a.gif",
@@ -10,10 +10,10 @@
     "static/media/shiny logo.png": "/static/media/shiny logo.a6b756e61cf7b16b1980.png",
     "index.html": "/index.html",
     "main.bbd5732d.css.map": "/static/css/main.bbd5732d.css.map",
-    "main.58dfb52a.js.map": "/static/js/main.58dfb52a.js.map"
+    "main.d81882e3.js.map": "/static/js/main.d81882e3.js.map"
   },
   "entrypoints": [
     "static/css/main.bbd5732d.css",
-    "static/js/main.58dfb52a.js"
+    "static/js/main.d81882e3.js"
   ]
 }
