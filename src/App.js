@@ -10,8 +10,8 @@ import Starscape from './components/Starscape';
 const App = () => {
   return <>
     <Starscape densityRatio={0.3} defaultAlpha={1}/>
-    <Navbar/>
     <Router>
+      <Navbar/>
       <Routes>
         <Route exact path='/' element={<Home/>}/>
         <Route path='/bci' element={<BCIPage/>}/>
@@ -19,8 +19,8 @@ const App = () => {
           <h1>Error: Page does not exist</h1>
         }/>
       </Routes>
+      <Footer/>
     </Router>
-    <Footer/>
   </>
 }
 

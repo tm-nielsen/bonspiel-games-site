@@ -1,5 +1,5 @@
 import React, {useState, useEffect, useRef} from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import '../styling/navbar.css'
 import logo from '../images/favicon.ico'
 
@@ -36,17 +36,18 @@ const Navbar = () => {
         <div className="nav-bg" style={{opacity: opacity}}/>
         <div className="width-container">
             <div className="flex-container">
-            <a href='/#home' className="nav-main">
-                <img src={logo} alt="logo" className="nav-logo" />
-                <h1 className="nav-main">Bonspiel Games</h1>
-            </a></div>
+                <a href='/#' className="nav-main">
+                    <img src={logo} alt="logo" className="nav-logo" />
+                    <h1 className="nav-main">Bonspiel Games</h1>
+                </a>
+            </div>
             <div className="flex-container">
             <nav>
                 <ul className="nav-list">
                     <li>
-                        <a href='/#home' className="nav-link">
-                            Curl
-                        </a>
+                    <a href='/#home' className="nav-link">
+                        Curl
+                    </a>
                     </li>
                     <li>
                     <a href='/#faq' className="nav-link">
@@ -59,12 +60,9 @@ const Navbar = () => {
                     </a>
                     </li>
                     <li>
-                    <a href='bci' className="nav-link" onClick={(e) => {
-                        if(window.location.href.split('/').slice(-1)[0] === "bci")
-                            e.preventDefault()
-                    }}>
+                    <Link to='/bci' className="nav-link">
                         About BCI
-                    </a>
+                    </Link>
                     </li>
                 </ul>
             </nav></div>
