@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Section = ({children, id}) => {
+const Title = () => <b><i>Curl!</i></b>
 
+const Section = ({children, id}) => {
     return <div className="section" id={id}>
         {children}
     </div>
 }
 
-export default Section
+export {Title, Section}

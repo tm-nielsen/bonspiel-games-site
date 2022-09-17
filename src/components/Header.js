@@ -8,7 +8,6 @@ const Header = ({title, backgroundImage, id}) => {
 
     useEffect(() => {
         const height = ref.current.clientHeight
-        console.log('height: ', height)
         const range = 100
         const offset = height / 2
 

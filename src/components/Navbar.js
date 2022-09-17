@@ -10,7 +10,6 @@ const Navbar = () => {
 
     useEffect(() => {
         const height = ref.current.clientHeight
-        console.log('height: ', height)
         const range = 100
         const offset = height / 2
 
@@ -30,7 +29,7 @@ const Navbar = () => {
         return () => {
             window.removeEventListener('scroll', onScroll)
         }
-    })
+    }, [])
 
     return (
     <div className="navbar" ref={ref} >
@@ -60,7 +59,10 @@ const Navbar = () => {
                     </a>
                     </li>
                     <li>
-                    <a href='bci' className="nav-link">
+                    <a href='bci' className="nav-link" onClick={(e) => {
+                        if(window.location.href.split('/').slice(-1)[0] === "bci")
+                            e.preventDefault()
+                    }}>
                         About BCI
                     </a>
                     </li>

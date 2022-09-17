@@ -53,3 +53,7 @@ html {
   
   scroll-behavior: smooth;
 }
+
+.indent {
+  text-indent: 1em;
+}
