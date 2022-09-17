@@ -2,9 +2,9 @@ import React from "react";
 import Header from "../components/Header";
 import { Section, Title } from "../components/Page Elements";
 import '../styling/home.css'
-import gameplayGif from '../images/gameplay.gif'
+import gameplayGif from '../images/gameplay-small.gif'
 import mapGif from '../images/map select.gif'
-import bciGif from '../images/team_and_char.gif'
+import bciGif from '../images/team_and_char-small.gif'
 import trainingIm from '../images/side-by-side-training.png'
 import titleLogo from '../images/shiny logo.png'
 // import trainingIm from '../images/side-by-side-training.png'
