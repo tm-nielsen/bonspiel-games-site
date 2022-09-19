@@ -16,7 +16,7 @@ const Home = () => {
         <Header text={''} backgroundImage={titleLogo} id="header"/>
         <Section>
                 <p className="section-body">
-                    <Title/> is a first-of-tis-kind video game, built from the ground up for accessibility including integrated control through Brain-Computer-Interface (BCI), switch-access or other input schemes in addition to traditional controllers
+                    <Title/> is a first-of-its-kind video game, built from the ground up for accessibility including integrated control through Brain-Computer-Interface (BCI), switch-access or other input schemes in addition to traditional controllers
                 </p>
         </Section>
         <Section>
@@ -83,10 +83,10 @@ const Home = () => {
                 But probably not in the way you might expect.
             </p>
             <p className="section-body-small indent">
-                BCI technology has enourmous potential to ease the barriers that people face when trying to live in a world constructed without them in mind. In our project, we make use of this technology to enable the play of gamers with severe disabilities.
+                BCI technology has enourmous potential to ease the barriers that people face when trying to live in a world constructed without them in mind. In our project, we make use of this technology to enable the play of gamers with severe physical disabilities.
             </p>
             <p className="section-body-small indent">
-                Amazing as this might be, the average gamer will not be affected by it's inclusion. There are various technical and design factors prohibiting the effective use of BCI outside of specifically engineered contexts. This is not limited to the present, but the limitations of present devices present numerous additional practical barriers to reliable control. The value of BCi, as we have used it, is to provide alternative access to an art form we love.
+                Amazing as this might be, the average gamer will not be affected by it's inclusion. There are various technical and design factors prohibiting the effective use of BCI outside of specifically engineered contexts. The value of BCI, as we have utilized it, is to provide alternative access to an art form we love.
             </p>
             <p className="section-body-small indent">
                 That is to say, you will never play <i>Fifa</i> with a Brain-Computer Interface, but there is tremendous value in what the technology can provide to others (and science).

@@ -36,28 +36,28 @@ const Navbar = () => {
         <div className="nav-bg" style={{opacity: opacity}}/>
         <div className="width-container">
             <div className="flex-container">
-                <a href='/#' className="nav-main">
+                <Link to='/#' className="nav-main">
                     <img src={logo} alt="logo" className="nav-logo" />
                     <h1 className="nav-main">Bonspiel Games</h1>
-                </a>
+                </Link>
             </div>
             <div className="flex-container">
             <nav>
                 <ul className="nav-list">
                     <li>
-                    <a href='/#' className="nav-link">
+                    <Link to={{pathname: "", hash: ""}} className="nav-link">
                         Curl
-                    </a>
+                    </Link>
                     </li>
                     <li>
-                    <a href='/#faq' className="nav-link">
+                    <Link to={{pathname: "", hash: "faq"}} className="nav-link">
                         FAQ
-                    </a>
+                    </Link>
                     </li>
                     <li>
-                    <a href='/#team' className="nav-link">
+                    <Link to={{pathname: "", hash: "team"}} className="nav-link">
                         Team
-                    </a>
+                    </Link>
                     </li>
                     <li>
                     <Link to='/bci' className="nav-link">
