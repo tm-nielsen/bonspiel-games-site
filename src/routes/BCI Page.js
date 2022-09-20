@@ -22,10 +22,14 @@ const BCIPage = () => {
     return <div>
         <Header className="" title={"ABOUT BCI"}/>
         <br /><br /><br /><br />
-        <div className="width-container-flat">
-            <button className={GetButtonClass(0)} onClick={() => setSelectedExplanation(0)}><BiShapeTriangle/></button>
+        <div className="option-container">
+            <BiShapeTriangle className={GetButtonClass(0)} onClick={() => setSelectedExplanation(0)}/>
+            <BiShapeSquare className={GetButtonClass(1)} onClick={() => setSelectedExplanation(1)}/>
+            <BiShapePolygon className={GetButtonClass(2)} onClick={() => setSelectedExplanation(2)}/>
+
+            {/* <button className={GetButtonClass(0)} onClick={() => setSelectedExplanation(0)}><BiShapeTriangle/></button>
             <button className={GetButtonClass(1)} onClick={() => setSelectedExplanation(1)}><BiShapeSquare/></button>
-            <button className={GetButtonClass(2)} onClick={() => setSelectedExplanation(2)}><BiShapePolygon/></button>
+            <button className={GetButtonClass(2)} onClick={() => setSelectedExplanation(2)}><BiShapePolygon/></button> */}
         </div>
         <div className="width-container-flat">
             {GetExplanation()}

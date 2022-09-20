@@ -31,7 +31,7 @@ const Header = ({title, backgroundImage, id}) => {
 
   return <div ref={ref} className="header" style={{opacity: opacity}} id={id}>
     <div className="width-container">
-        {backgroundImage? <img src={backgroundImage} alt="header" />
+        {backgroundImage? <img src={backgroundImage} alt="header" className="header-image"/>
         : <h1>{title}</h1>}
     </div>
   </div>

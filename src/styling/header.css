@@ -4,8 +4,13 @@
     /* opacity: 0; */
     height: 20em;
     /* width: auto; */
+    /* max-width: 80vw; */
 
     padding-top: 5em;
     padding-bottom: 1em;
     justify-content: center;
+}
+
+.header-image {
+    height: 18em;
 }

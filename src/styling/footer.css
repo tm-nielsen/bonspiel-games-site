@@ -1,12 +1,13 @@
 .footer {
     display: flex;
-    justify-content: center;
-    margin: 3em 0 8em 0;
+    justify-content: space-around;
+    margin: 3em auto 8em auto;
+    max-width: 1080PX;
 }
 
 .footer-icon-box {
     padding: 1em;
-    margin-inline: 6em;
+    /* margin-inline: 6em; */
 }
 
 .footer-icon {
