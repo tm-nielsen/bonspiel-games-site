@@ -20,7 +20,7 @@ code {
   display: flex;
   width: 95vw;
   max-width: 1200px;
-  margin: 4em 1.25em 0 1.25em;
+  margin: 4em 2.5vw 0 2.5vw;
   justify-content: space-around;
 }
 
