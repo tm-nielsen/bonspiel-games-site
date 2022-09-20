@@ -1,7 +1,11 @@
 import React from "react";
 import Header from "../components/Header";
 import { Section, Title } from "../components/Page Elements";
+import SteamWidget from "../components/SteamWidget";
 import '../styling/home.css'
+
+import trailerWebm from '../images/trailer.webm'
+import trailerMp4 from '../images/trailer.mp4'
 import gameplayWebm from '../images/gameplay.webm'
 import gameplayMp4 from '../images/gameplay.mp4'
 import mapGif from '../images/map select.gif'
@@ -15,8 +19,14 @@ const Home = () => {
     return <div className="home">
         <Header text={''} backgroundImage={titleLogo} id="header"/>
         <Section>
+            <video controls alt="gameplay trailer" className="trailer">
+                <source src={trailerWebm} type="video/wemb"/>
+                <source src={trailerMp4} type="video/mp4"/>
+            </video>
+        </Section>
+        <Section>
                 <p className="section-body">
-                    <Title/> is a first-of-its-kind video game, built from the ground up for accessibility including integrated control through Brain-Computer-Interface (BCI), switch-access or other input schemes in addition to traditional controllers
+                    <Title/> is a first-of-its-kind video game, built from the ground up for accessibility including integrated control through Brain-Computer-Interface (BCI), switch-access or other input schemes in addition to traditional controllers.
                 </p>
         </Section>
         <Section>
@@ -96,7 +106,8 @@ const Home = () => {
             <p className="section-body-small">
                 <Title/> is luanching into <b>Steam Early Access</b> later this year.
             </p>
-            <iframe src="https://store.steampowered.com/widget/2100970/" frameBorder="0" width="646" height="190" title="steam link"/>
+            {/* <iframe src="https://store.steampowered.com/widget/2100970/" frameBorder="0" title="steam link" className="embed"/> */}
+            <SteamWidget/>
             
             <h2 className="section-subheader">BCI?</h2>
             <p className="section-body-small">

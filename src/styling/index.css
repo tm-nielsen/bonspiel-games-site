@@ -7,6 +7,8 @@ body {
   
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  font-size: min(1.25vw, 10px);
 }
 
 code {
@@ -16,17 +18,16 @@ code {
 
 .width-container {
   display: flex;
-  width: 85%;
+  width: 95%;
   max-width: 1200px;
-  margin-top: 15px;
-  margin-right: 5%;
-  margin-left: 5%;
+  margin: 2vw 2.5vw 0 2.5vw;
+  margin: 4em 1.25em 0 1.25em;
   justify-content: space-around;
 }
 
 .width-container-flat {
   display: flex;
-  width: 85%;
+  width: 95%;
   max-width: 1200px;
   margin: auto;
   justify-content: space-around;
@@ -40,9 +41,10 @@ code {
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 12em;
     font-family: 'Milocha', sans-serif;
     letter-spacing: 0.1em;
+    align-self: baseline;
 }
 
 .indent {

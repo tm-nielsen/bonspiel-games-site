@@ -1,16 +1,17 @@
 .footer {
     display: flex;
     justify-content: center;
-    margin: 5rem 0 5rem 0;
+    margin: 3em 0 8em 0;
 }
 
 .footer-icon-box {
-    padding: 1rem;
-    margin-inline: 3rem;
+    padding: 1em;
+    margin-inline: 6em;
 }
 
 .footer-icon {
-    height: 5rem;
+    height: calc(40px + 5vw);
+    height: 12em;
     width: auto;
     font-display: none;
     color: darkgray;

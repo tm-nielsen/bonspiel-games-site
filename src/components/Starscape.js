@@ -40,6 +40,9 @@ const Starscape = ({densityRatio = 0.5, sizeLimit = 5, defaultAlpha = 0.5}) => {
     }
 
     window.addEventListener("resize", ()=>{
+      if(canvasRef === null)
+        return
+
       LOAD()
       RENDER()
     }, false)

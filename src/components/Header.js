@@ -8,7 +8,7 @@ const Header = ({title, backgroundImage, id}) => {
 
     useEffect(() => {
         const height = ref.current.clientHeight
-        const range = 100
+        const range = Math.min(window.innerWidth, 1000) / 10
         const offset = height / 2
 
         const onScroll = e => {

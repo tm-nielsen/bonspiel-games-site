@@ -1,21 +1,19 @@
-.option-container {
-
-}
-
 .explanation-option {
-    font-size: 8em;
+    font-size: 14em;
     font-weight: normal;
     background-color: #0000;
     color: darkgray;
-    transition: all 0.5s ease-out;
+    transition: all 0.25s ease-out;
+    border: transparent;
 }
 .explanation-option:hover {
     transform: rotate(10deg) scale(1.2);
     color: aliceblue;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-out;
 }
 
-.explanation-option-selected {font-size: 8em;
+.explanation-option-selected {
+    font-size: 24em;
     transform-origin: 50% 41%;
     font-weight: normal;
     background-color: #0000;
@@ -23,6 +21,7 @@
     -webkit-animation:spin 8s linear infinite;
     -moz-animation:spin 8s linear infinite;
     animation:spin 8s linear infinite;
+    border: transparent;
 }
 @-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
 @-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
@@ -33,18 +32,19 @@
     height: fit-content;
     min-height: 250px;
     max-width: 1080px;
-    padding: 50px 34px;
+    padding: 5vw 2vw;
     margin: auto;
     flex: 1;
 }
 
 .explanation-header {
-    font-size: 3.5em;
+    font-size: min(calc(10px + 4vw), 72px);
     text-align: center;
-    padding-bottom: 1rem;
-    border-bottom: 0.5rem dashed aliceblue;
+    padding-bottom: 0.5em;
+    border-bottom: min(2vw, 18px) dashed aliceblue;
 }
 
 .explanation-body {
-    font-size: 2em;
+    font-size: calc(10px + 1vw);
+    font-size: 2.75em;
 }

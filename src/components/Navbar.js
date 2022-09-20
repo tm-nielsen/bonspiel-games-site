@@ -16,8 +16,8 @@ const Navbar = () => {
         const onScroll = e => {
             let calc = (window.scrollY - offset + range) / range
 
-            if(calc > 0.8)
-                calc = 0.8
+            if(calc > 0.9)
+                calc = 0.9
             else if(calc < 0)
                 calc = 0
 
@@ -34,8 +34,8 @@ const Navbar = () => {
     return (
     <div className="navbar" ref={ref} >
         <div className="nav-bg" style={{opacity: opacity}}/>
-        <div className="width-container">
-            <div className="flex-container">
+        <div className="width-container-flat">
+            <div className="flex-container" style={{flex: 2}}>
                 <Link to='/#' className="nav-main">
                     <img src={logo} alt="logo" className="nav-logo" />
                     <h1 className="nav-main">Bonspiel Games</h1>

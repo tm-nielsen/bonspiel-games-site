@@ -13,17 +13,29 @@
 
 .divider {
     width: 100%;
+    max-width: 1200px;
     height: 0;
-    margin: 5rem 0;
+    margin: 4em auto;
     
-    border-top: 0.5rem dashed aliceblue;
+    border-top: min(2vw, 18px) dashed aliceblue;
 }
+
+ .trailer {
+    width: 90vw;
+    max-width: 1080px;
+    height: auto;
+ }
+
+ .embed {
+    width: 750px;
+    height: 190px;
+ }
 
 .section {
     background-color: #0009;
     height: fit-content;
     max-width: 1080px;
-    padding: 1rem 1rem;
+    padding: 1em 1em;
     margin: auto;
 }
 /* fixes issue to resize with floating children */
@@ -42,7 +54,7 @@
 }
 
 .section-image {
-    width: 20em;
+    width: 25em;
     height: auto;
     float: right;
     position: relative;
@@ -54,11 +66,12 @@
 .section-body {
     justify-content: space-around;
     line-height: normal;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .section-subheader {
-    font-size: 1.5em;
+    font-size: calc(12px + 2vw);
+    font-size: 2.75em;
     font-weight: bold;
     margin-top: 1.5em;
 }
@@ -66,7 +79,7 @@
 .section-body-small {
     justify-content: space-around;
     line-height: normal;
-    font-size: 1em;
+    font-size: 1.5em;
 }
 
 .right-container {

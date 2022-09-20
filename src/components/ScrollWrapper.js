@@ -19,7 +19,7 @@ const ScrollWrapper = (props) => {
         document.getElementById(hash).scrollIntoView(scrollOptions)
 
         setPreviousLocation(location)
-    }, [location])
+    }, [location, previousLocation.pathname])
     
     return <>{props.children}</>
 }
