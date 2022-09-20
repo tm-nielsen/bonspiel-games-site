@@ -1,7 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.bbd5732d.css",
-    "main.js": "/static/js/main.6edf026b.js",
+    "main.css": "/static/css/main.387232bf.css",
+    "main.js": "/static/js/main.35978d62.js",
+    "static/media/trailer.webm": "/static/media/trailer.3422c50f8c4e888f0e6b.webm",
+    "static/media/trailer.mp4": "/static/media/trailer.5f7a5c2fd5f9ad188e18.mp4",
     "static/media/gameplay.mp4": "/static/media/gameplay.4fa476b99658fd8c3616.mp4",
     "static/media/gameplay.webm": "/static/media/gameplay.18739e75d9901bbfdcfb.webm",
     "static/media/team_and_char.mp4": "/static/media/team_and_char.1b9008686b684b223abe.mp4",
@@ -10,12 +12,13 @@
     "static/media/side-by-side-training.png": "/static/media/side-by-side-training.1cd043c5ca2409949626.png",
     "static/media/favicon.ico": "/static/media/favicon.d9e19ff958db065f79e9.ico",
     "static/media/shiny logo.png": "/static/media/shiny logo.a6b756e61cf7b16b1980.png",
+    "static/media/Small-Capsule.jpg": "/static/media/Small-Capsule.2fe859ac93ceae46fe81.jpg",
     "index.html": "/index.html",
-    "main.bbd5732d.css.map": "/static/css/main.bbd5732d.css.map",
-    "main.6edf026b.js.map": "/static/js/main.6edf026b.js.map"
+    "main.387232bf.css.map": "/static/css/main.387232bf.css.map",
+    "main.35978d62.js.map": "/static/js/main.35978d62.js.map"
   },
   "entrypoints": [
-    "static/css/main.bbd5732d.css",
-    "static/js/main.6edf026b.js"
+    "static/css/main.387232bf.css",
+    "static/js/main.35978d62.js"
   ]
 }
