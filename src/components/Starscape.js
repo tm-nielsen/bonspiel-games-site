@@ -1,5 +1,6 @@
 import React, {useRef, useEffect} from 'react'
-import gsap from 'gsap'
+import seedrandom from 'seedrandom'
+// import gsap from 'gsap'
 import '../styling/starscape.css'
 
 const Starscape = ({densityRatio = 0.5, sizeLimit = 5, defaultAlpha = 0.5}) => {
@@ -10,17 +11,24 @@ const Starscape = ({densityRatio = 0.5, sizeLimit = 5, defaultAlpha = 0.5}) => {
   useEffect(() => {
     contextRef.current = canvasRef.current.getContext('2d')
 
+    const random = (rng, min, max, step) => {
+      var rawval = Math.ceil(min + (max - min) * rng())
+      return Math.ceil(rawval / step) * step
+    }
+
     const LOAD = () => {
       const VMIN = Math.min(window.innerHeight, window.innerWidth)
       const STAR_COUNT = Math.floor(VMIN * densityRatio)
       canvasRef.current.width = window.innerWidth
       canvasRef.current.height = window.innerHeight
+
+      var rng = new seedrandom('seed')
       starsRef.current = new Array(STAR_COUNT).fill().map(() => ({
-        x: gsap.utils.random(0, window.innerWidth, 1),
-        y: gsap.utils.random(0, window.innerHeight, 1),
-        size: gsap.utils.random(1, sizeLimit, 1),
+        x: random(rng, 0, window.innerWidth, 1),
+        y: random(rng, 0, window.innerHeight, 1),
+        size: random(rng, 1, sizeLimit, 1),
         scale: 1,
-        alpha: gsap.utils.random(0.1, defaultAlpha, 0.1),
+        alpha: random(rng, 0.1, defaultAlpha, 0.1),
       }))
     }
 
