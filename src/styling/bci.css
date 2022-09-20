@@ -1,0 +1,49 @@
+.explanation-option {
+    font-size: 14em;
+    font-weight: normal;
+    background-color: #0000;
+    color: darkgray;
+    transition: all 0.25s ease-out;
+    border: transparent;
+}
+.explanation-option:hover {
+    transform: rotate(10deg) scale(1.2);
+    color: aliceblue;
+    transition: all 0.1s ease-out;
+}
+
+.explanation-option-selected {
+    font-size: 24em;
+    transform-origin: 50% 41%;
+    font-weight: normal;
+    background-color: #0000;
+    color: aliceblue;
+    -webkit-animation:spin 8s linear infinite;
+    -moz-animation:spin 8s linear infinite;
+    animation:spin 8s linear infinite;
+    border: transparent;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(-360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(-360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(-360deg); transform:rotate(-360deg); } }
+
+.explanation {
+    background-color: #0009;
+    height: fit-content;
+    min-height: 250px;
+    max-width: 1080px;
+    padding-bottom: 5em;
+    margin: auto;
+    flex: 1;
+}
+
+.explanation-header {
+    font-size: min(calc(10px + 4vw), 72px);
+    text-align: center;
+    padding-bottom: 0.5em;
+    border-bottom: min(2vw, 18px) dashed aliceblue;
+}
+
+.explanation-body {
+    font-size: 2.75em;
+}

@@ -1,0 +1,98 @@
+.home{
+    color: azure;
+
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5em;
+    line-height: 1em;
+}
+
+.divider {
+    width: 100%;
+    max-width: 1200px;
+    height: 0;
+    margin: 4em auto;
+    
+    border-top: min(2vw, 18px) dashed aliceblue;
+}
+
+ .trailer {
+    width: 90vw;
+    max-width: 1080px;
+    height: auto;
+ }
+
+ .embed {
+    width: 750px;
+    height: 190px;
+ }
+
+.section {
+    background-color: #0009;
+    height: fit-content;
+    max-width: 1080px;
+    padding: 1em 1em;
+    margin: auto;
+}
+/* fixes issue to resize with floating children */
+.section::after { 
+    content: " ";
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+
+.section-header{
+    display: inline-flex;
+    font-weight: normal;
+    font-size: 2.5em;
+    margin: 0 0 0.5em 0;
+}
+
+.section-image {
+    width: 25em;
+    height: auto;
+    float: right;
+    position: relative;
+    margin: 2.5% 5%;
+    outline: 0.25em solid aliceblue;
+    outline-offset: 0.25em;
+}
+
+.section-body {
+    justify-content: space-around;
+    line-height: normal;
+    font-size: 2em;
+}
+
+.section-subheader {
+    font-size: calc(12px + 2vw);
+    font-size: 2.75em;
+    font-weight: bold;
+    margin-top: 1.5em;
+}
+
+.section-body-small {
+    justify-content: space-around;
+    line-height: normal;
+    font-size: 1.5em;
+}
+
+.right-container {
+    display: flex;
+    justify-content: right;
+    height: fit-content;
+}
+.left {
+    float: left;
+}
+
+.scroll-target{
+    position: relative;
+    size: 0;
+    top: -10rem;
+}
