@@ -107,6 +107,7 @@ const Home = () => {
                 <Title/> is luanching into <b>Steam Early Access</b> later this year.
             </p>
             {/* <iframe src="https://store.steampowered.com/widget/2100970/" frameBorder="0" title="steam link" className="embed"/> */}
+            {/* <iframe src="https://store.steampowered.com/widget/2100970/" frameborder="0" title="steam-link" className="embed"/> */}
             <SteamWidget/>
             
             <h2 className="section-subheader">BCI?</h2>

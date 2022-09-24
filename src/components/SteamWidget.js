@@ -21,6 +21,12 @@ const SteamWidget = () => {
             <h2 className="date">Available: Late 2022</h2>
         </div>
         <div className="wishlist-button">
+            {/* <form action="https://store.steampowered.com//api/addtowishlist/" method='POST' target='_blank'>
+                <input type="hidden" name="snr" value="1_5_1100_"/>
+                <input type="hidden" name="sessionid" value="c22eb79a5552f54ec8c122a4"/>
+                <input type="hidden" name="appid" value="2100970"/>
+                <input type="hidden" name="widget" value="1"/>
+            </form> */}
             <a href="https://store.steampowered.com/app/2100970/Curl/"  target="_blank" rel="noreferrer" className="wishlist-button-content">
                 Wishlist on Steam
             </a>
