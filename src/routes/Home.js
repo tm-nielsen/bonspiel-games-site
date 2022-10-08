@@ -68,7 +68,7 @@ const Home = () => {
         
         <Section>
             <div className="right-container">
-                <h1 className="section-header">Switch Accessibe Menus and UI</h1>
+                <h1 className="section-header">Switch Accessible Menus and UI</h1>
             </div>
             <video autoPlay loop muted playsInline alt="users navigating switch accessible menus" className="section-image left">
                 <source src={bciWebm} type="video/webm"/>
@@ -104,7 +104,7 @@ const Home = () => {
             
             <h2 className="section-subheader">When Does it Come Out?</h2>
             <p className="section-body-small">
-                <Title/> is luanching into <b>Steam Early Access</b> later this year.
+                <Title/> is launching into <b>Steam Early Access</b> later this year.
             </p>
             {/* <iframe src="https://store.steampowered.com/widget/2100970/" frameBorder="0" title="steam link" className="embed"/> */}
             {/* <iframe src="https://store.steampowered.com/widget/2100970/" frameborder="0" title="steam-link" className="embed"/> */}
@@ -120,7 +120,7 @@ const Home = () => {
                 The focus of the project is providing an engaging experience for people that haven't been able to play games before. This is not a trivial task, and takes dev time away from the creation of additional features and content.
             </p>
             <p className="section-body-small">
-                <Title/> is going into Early Access when is is primarilly to facilitate the informed development of the accessibility features before moving on to content explansion later in development. As a result, the project and development may be different in scope than players may expect based on contemporaries.
+                <Title/> is going into Early Access when it is primarilly to facilitate the informed development of the accessibility features before moving on to content explansion later in development. As a result, the project and development may be different in scope than players may expect based on contemporaries.
             </p>
         </Section>
         
