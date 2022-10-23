@@ -53,6 +53,12 @@
     border-bottom: min(2vw, 18px) dashed aliceblue;
 }
 
+h5 {
+    font-size: 2.25rem;
+    font-weight: bolder;
+    line-height: 0;
+}
+
 .explanation-body {
     font-size: 2.75em;
 }
