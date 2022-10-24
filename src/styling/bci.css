@@ -46,19 +46,40 @@
     flex: 1;
 }
 
-.explanation-header {
+h2 {
     font-size: min(calc(10px + 4vw), 72px);
     text-align: center;
     padding-bottom: 0.5em;
     border-bottom: min(2vw, 18px) dashed aliceblue;
 }
 
-h5 {
-    font-size: 2.25rem;
+h3 {
+    font-size: 4em;
     font-weight: bolder;
-    line-height: 0;
+    margin-bottom: 0em;
+    margin-top: 2em;
 }
 
-.explanation-body {
+h4 {
+    font-size: 3em;
+    font-weight: bold;
+    margin: 0;
+}
+
+p {
     font-size: 2.75em;
+    text-indent: 1em;
+}
+
+a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: aliceblue;
+}
+a:visited {
+    color: gray;
+}
+
+.no-indent{
+    text-indent: 0;
 }
