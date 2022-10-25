@@ -13,8 +13,8 @@ const MobileNav = () => {
   }
   
   return (
-    <div className="nav">
-        <div className="width-container">
+    <div className="mobile-navbar">
+        <div className="width-container-flat">
           <Link to='/#' className="mobile-nav-header">
             <img src={logo} alt="logo" className="mobile-nav-logo" />
             <h1 className='mobile-nav-header'>Bonspiel Games</h1>

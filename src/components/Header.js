@@ -12,8 +12,10 @@ const Header = ({title, backgroundImage, id}) => {
         const offset = height / 2
 
         const onScroll = e => {
-            if(window.innerWidth < 500)
+            if(window.innerWidth < 500){
+                setOpacity(1)
                 return
+            }
                 
             let calc = 1 - (window.scrollY - offset + range) / range
 
