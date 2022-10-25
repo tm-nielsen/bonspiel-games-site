@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.1225b47e.css",
+    "main.css": "/static/css/main.82a540da.css",
     "main.js": "/static/js/main.dd5f7be6.js",
     "static/media/trailer.webm": "/static/media/trailer.3422c50f8c4e888f0e6b.webm",
     "static/media/trailer.mp4": "/static/media/trailer.5f7a5c2fd5f9ad188e18.mp4",
@@ -14,11 +14,11 @@
     "static/media/shiny logo.png": "/static/media/shiny logo.a6b756e61cf7b16b1980.png",
     "static/media/Small-Capsule.jpg": "/static/media/Small-Capsule.2fe859ac93ceae46fe81.jpg",
     "index.html": "/index.html",
-    "main.1225b47e.css.map": "/static/css/main.1225b47e.css.map",
+    "main.82a540da.css.map": "/static/css/main.82a540da.css.map",
     "main.dd5f7be6.js.map": "/static/js/main.dd5f7be6.js.map"
   },
   "entrypoints": [
-    "static/css/main.1225b47e.css",
+    "static/css/main.82a540da.css",
     "static/js/main.dd5f7be6.js"
   ]
 }
