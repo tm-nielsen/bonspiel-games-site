@@ -112,7 +112,7 @@ const Home = () => {
             
             <h2 className="section-subheader">BCI?</h2>
             <p className="section-body-small">
-                A Brain-Computer Interface, or BCI, is a device that reads the electrical activity of the brain through the scalp. <Title/> uses this technology to enable the play of gamers with severe physical disabilities. For more information, see the <a href="/bci">about bci</a> page.
+                A Brain-Computer Interface, or BCI, is a device that reads the electrical activity of the brain through the scalp. <Title/> uses this technology to enable the play of gamers with severe physical disabilities. For more information, see the <a href="/bci" className="link">about bci</a> page.
             </p>
             
             <h2 className="section-subheader">What about the Game?</h2>

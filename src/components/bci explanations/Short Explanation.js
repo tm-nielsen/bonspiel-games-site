@@ -4,7 +4,7 @@ import '../../styling/bci.css'
 
 const ShortBCIExplanation = () => {
   return <div className="explanation">
-    <h2>The Short Version</h2>
+    <h2 className='bci-header'>The Short Version</h2>
     <p className="no-indent">
       <b><i>BCI</i></b> stands for <b>B</b>rain-<b>C</b>omputer <b>I</b>nterface, a device that can read the electricity in your brain.
       <br /><br />

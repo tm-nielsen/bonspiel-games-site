@@ -2,7 +2,7 @@ import React from 'react'
 
 const MidBCIExplanation = () => {
   return <div className="explanation">
-    <h2>The Readable Version</h2>
+    <h2 className='bci-header'>The Readable Version</h2>
     <p>
       A <b>B</b>rain-<b>C</b>omputer <b>I</b>nterface is a device that can read and translate the electrochemical signals of the brain into a computer legible format. These devices are worn on the head, with multiple electrodes placed around the scalp. With current technology, the limited clarity and incredible nuance of these signals severely limits the specificity or validity of their possible interpretations. However, it is reasonable to categorize signals coming from the device into a small set of predefined general groups using machine learning. These categorical groups can then be used to detect the rough identity of the current signal.
     </p>

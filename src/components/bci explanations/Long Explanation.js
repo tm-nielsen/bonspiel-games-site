@@ -3,7 +3,7 @@ import { Title } from '../Page Elements'
 
 const LongBCIExplanation = () => {
   return <div className="explanation">
-    <h2>As Much Detail as I can Muster</h2>
+    <h2 className='bci-header'>As Much Detail as I can Muster</h2>
     <p className="no-indent">
       This section assumes you have seen 'The Readable Version' to avoid repitition and will focus on the use of BCI technology with <Title/>. If you want more info on BCI technology itself, <a href="https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface" target="_blank" rel="noreferrer">the Wikipedia article</a> will serve you better.
     </p>

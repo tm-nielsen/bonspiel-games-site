@@ -49,3 +49,12 @@ h1 {
 .indent {
   text-indent: 1em;
 }
+
+a {
+  text-decoration: underline;
+  font-weight: bold;
+  color: aliceblue;
+}
+a:visited {
+  color: gray;
+}

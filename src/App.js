@@ -1,7 +1,8 @@
 import React from 'react';
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
+import NavMenu from './components/NavMenu';
 import Footer from './components/Footer';
 import ScrollWrapper from './components/ScrollWrapper';
 import Home from './routes/Home';
@@ -12,7 +13,7 @@ const App = () => {
   return <>
     <Starscape densityRatio={0.3} defaultAlpha={1}/>
     <Router>
-      <Navbar/>
+      <NavMenu/>
       <ScrollWrapper>
         <Routes>
           <Route exact path='/' element={<Home/>}/>

@@ -46,8 +46,8 @@
     flex: 1;
 }
 
-h2 {
-    font-size: min(calc(10px + 4vw), 72px);
+h2.bci-header {
+    font-size: min(calc(10px + 3.5vw), 72px);
     text-align: center;
     padding-bottom: 0.5em;
     border-bottom: min(2vw, 18px) dashed aliceblue;
@@ -64,20 +64,12 @@ h4 {
     font-size: 3em;
     font-weight: bold;
     margin: 0;
+    margin-top: 2em;
 }
 
 p {
     font-size: 2.75em;
     text-indent: 1em;
-}
-
-a {
-    text-decoration: underline;
-    font-weight: bold;
-    color: aliceblue;
-}
-a:visited {
-    color: gray;
 }
 
 .no-indent{

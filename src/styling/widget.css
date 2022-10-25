@@ -13,26 +13,24 @@
 .widget-header {
     display: flex;
     flex-direction: row;
-}
-h2 {
     font-size: calc(18px + 1vw);
     font-weight: normal;
 }
-h2.head {
+h5.head {
     color: aliceblue;
     margin: calc(12px + 0.25vw) 0 calc(6px + 0.5vw) 0;
 }
-h2.tail {
+h5.tail {
     color: #999;
     margin: calc(12px + 0.25vw) 0 calc(6px + 0.5vw) calc(4px + 0.25vw);
 }
 
 .desc {
-    font-size: calc(14px + 0.5vw);
-    font-size: min(2em, 20px);
+    font-size: calc(8px + 0.8vw);
+    /* font-size: min(2em, 20px); */
     color: #c9c9c9;
     line-height: calc(16px + 1vw);
-    line-height: min(1.5em, 24px)
+    /* line-height: min(1.5em, 24px) */
 }
 .logo {
     float: left;
@@ -63,6 +61,7 @@ h2.tail {
 }
 .wishlist-button-content {
     font-size: 1.5em;
+    font-weight: auto;
     color: #d2efa9;
     text-shadow: 1px 1px 2px rgba( 0, 0, 0, 0.3 );
     text-decoration: none;
@@ -75,4 +74,7 @@ h2.tail {
 .wishlist-button-content:hover {
     color: aliceblue;
     background: #a7e84b;
+}
+.wishlist-button-content:visited{
+    color: #d2efa9;
 }
