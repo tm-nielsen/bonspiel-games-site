@@ -8,6 +8,13 @@ const LongBCIExplanation = () => {
       <p className="no-indent">
         This section assumes you have seen 'The Readable Version' to avoid repitition and will focus
         on the use of BCI technology with <Title />. If you want more info on BCI technology itself,{' '}
+        <a href="https://cumming.ucalgary.ca/research/pediatric-bci/bci-program/what-bci"
+          target="_blank"
+          rel="noreferrer"
+        >
+          this page
+        </a>
+        {' or '} 
         <a
           href="https://en.wikipedia.org/wiki/Brain%E2%80%93computer_interface"
           target="_blank"
@@ -22,7 +29,7 @@ const LongBCIExplanation = () => {
       <p>
         <Title /> depends largely on an external application to facilitate BCI functionality,
         providing UI and feedback as endpoints for an API. Currently this external aplication is the
-        Emotiv Luancher, which only supports Emotiv devices. We hope to expand support to as many
+        Emotiv Launcher, which only supports Emotiv devices. We hope to expand support to as many
         manufacturers as we can through open source alternatives over the course of development. In
         either case, the external program provides a similar set of methods to facilitate the
         established process of training and then using a machine learning model with the user's
@@ -35,7 +42,7 @@ const LongBCIExplanation = () => {
       <p>
         Before incoming brain signals can be classified and used as an input method, a meaty setup
         phase must be completed. First, the device must be put on the user and turned on. For most
-        commercial grade BCIs, this step is fairly simple, but different devices will require
+        commercial grade BCIs, this step is fairly simple. Different devices will require
         electrodes to be wetted with saline, or gel applied to the scalp. Some devices are built as
         a halo that can be worn like a helmet while others require the specific placement of many
         detached nodes around the scalp. With the headset placed (or during placement), <Title />{' '}
@@ -43,7 +50,7 @@ const LongBCIExplanation = () => {
         list in engine with UI to pair to the computer. The user selects a headset to pair, which{' '}
         <Title /> then tells the Emotiv Launcher to pair with and asks for contact quality
         information that is then displayed visually in the game. Contact quality is measured and
-        displayed by each individual electrode, whcih is used to adjust the placement or wetness of
+        displayed by each individual electrode, which is used to adjust the placement or wetness of
         individual sensors on the scalp until a sufficient overall quality is reached, at which
         point training can commence.
       </p>
@@ -53,12 +60,12 @@ const LongBCIExplanation = () => {
         snapshots of brain activity readings, labelled as either "idle" or "action". These samples
         can be gained in any order, but we take them alternating between idle and command. One of
         the most exciting things about <Title /> is that we get to do this training in context, with
-        engaging feedback for the user. This means that during the lengthy training process, one of
+        engaging feedback for the user. During the lengthy training process, one of
         the in game characters displays the current target state (idle or action), even providing
         direct feedback on action when it is available. During "action" training, an alien character
         is shown sweeping the ice. Once enough training has been completed for the computer to
-        detect action during training, the character speed up with the command. Additionally, as
-        training continues the base speed of the character's animation slows to nothing, eventually
+        detect action during training, the character speeds up with successful perofmance of the command. As
+        training continues, the base speed of the character's animation slows to nothing, eventually
         relying solely on the input of the player to move. This provides the player with contextual
         association with their action, which helps in game, but eventually peels back to give direct
         and realistic feedback. Unfortunately, due to the black box nature of a closed source
@@ -80,8 +87,7 @@ const LongBCIExplanation = () => {
         the mental command data stream as an input method. Each data stream is used through one or
         more layers of interpritation through the custom Unity plugin, routing streams of incoming
         data packets to relevant places and/or buffering them into the main engine thread as events.
-        The same is done to asynchornous events and responses from the Emotiv launcher to make
-        functionality avaible on the main thread. For control, the mental command stream is fed into
+        The same is done to asynchornous events and responses from the Emotiv launcher. For control, the mental command stream is fed into
         a headset control proxy that filters the incoming data and converts it into a single boolean
         or float input value in a code level interface equivalent to those used for a keyboard or
         gamepad.
@@ -117,7 +123,7 @@ const LongBCIExplanation = () => {
         Hold down to fill up, otherwise the bar will slowsly empty towards the default option. A
         selection is made once the bar reaches either end. Only two optoins can be selected, and the
         paradigm is best suited to options that fit naturally into the active and default roles,
-        such as "play again" or "return to menu". Perhaps
+        such as "play again" or "return to menu".
       </p>
 
       <h4>Multiple Press</h4>

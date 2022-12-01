@@ -127,7 +127,7 @@ const Home = () => {
         <p className="section-body-small indent">
           BCI technology has enourmous potential to ease the barriers that people face when trying
           to live in a world constructed without them in mind. In our project, we make use of this
-          technology to enable the play of gamers with severe physical disabilities.
+          technology to enable the play of gamers with complex physical needs.
         </p>
         <p className="section-body-small indent">
           Amazing as this might be, the average gamer will not be affected by it's inclusion. There
@@ -152,7 +152,7 @@ const Home = () => {
         <p className="section-body-small">
           A Brain-Computer Interface, or BCI, is a device that reads the electrical activity of the
           brain through the scalp. <Title /> uses this technology to enable the play of gamers with
-          severe physical disabilities. For more information, see the{' '}
+          limited reliable control of their muscles and bodies. For more information, see the{' '}
           <a href="/bci" className="link">
             about bci
           </a>{' '}
