@@ -34,8 +34,8 @@ const LongBCIExplanation = () => {
         either case, the external program provides a similar set of methods to facilitate the
         established process of training and then using a machine learning model with the user's
         brain signals as interprited by the BCI. This is all handled by a custom Unity plugin built
-        off of the official Emotiv support, which will go open source as soon as it has been made
-        user-friendly and poroperly tested.
+        off the official Emotiv support, which will go open source as soon as it has been made
+        user-friendly and properly tested.
       </p>
 
       <h3>Setup</h3>

@@ -35,6 +35,31 @@ const BCIPage = () => {
             <button className={GetButtonClass(2)} onClick={() => setSelectedExplanation(2)}><BiShapePolygon/></button> */}
       </div>
       <div className="width-container-flat">{GetExplanation()}</div>
+      
+      <div className="width-container-flat">
+        <div className="explanation" style={{minHeight: 'auto'}}>
+          <h2 className="bci-header">Unity Plugin</h2>
+          <p className="no-indent">
+            Integration with Emotiv BCI devices is wrapped into a custom Unity package that is now
+            open source and publicly available:{' '}
+            <a href="https://github.com/cm-nielsen/CortexPlugin"
+              target="_blank"
+              rel="noreferrer"
+            >
+              PLUGIN
+            </a>
+            {", "} 
+            <a
+              href="https://bonspiel-games.gitbook.io/cortex-unity-plugin/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              DOCUMENTATION
+            </a>
+          </p>
+        </div>
+      </div>
+
     </div>
   );
 };

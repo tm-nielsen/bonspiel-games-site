@@ -20,8 +20,7 @@ const MidBCIExplanation = () => {
         incoming signal that can be identified as belonging to signal group A or signal group B with
         a reasonable rate of error. Redefining these generic groups as "off" or on"; "idle" or
         "active", we can treat the overall system, following setup, as a single button. This clearly
-        defined one button gameplay allows for a more straightforward design constraint around which
-        the game must be built.
+        defined one button gameplay acts as a concrete design constraint which the game can be built around.
       </p>
       <h3>Considerations</h3>
       <p>
