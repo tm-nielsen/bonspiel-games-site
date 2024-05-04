@@ -40,8 +40,7 @@ const BCIPage = () => {
         <div className="explanation" style={{minHeight: 'auto'}}>
           <h2 className="bci-header">Unity Plugin</h2>
           <p className="no-indent">
-            Integration with Emotiv BCI devices is wrapped into a custom Unity package that is now
-            open source and publicly available:{' '}
+            Integration with Emotiv BCI devices is wrapped into a custom Unity package that is now open source and publicly available:{' '}
             <a href="https://github.com/cm-nielsen/CortexPlugin"
               target="_blank"
               rel="noreferrer"
