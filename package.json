@@ -2,7 +2,7 @@
   "name": "bonspiel-games-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bonspielgames.ca",
+  "homepage": "https://teamcurl.ca",
   "scripts": {
     "start": "vite",
     "build": "tsc && vite build",
