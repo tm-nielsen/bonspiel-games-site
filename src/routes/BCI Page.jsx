@@ -4,15 +4,38 @@ import Header from '../components/Header';
 import ShortBCIExplanation from '../components/bci explanations/Short Explanation';
 import MidBCIExplanation from '../components/bci explanations/Mid Explanation';
 import LongBCIExplanation from '../components/bci explanations/Long Explanation';
+
+import Markdown from 'markdown-to-jsx';
+import shortExplanation from '../bci_explanations/short_explanation.md?raw'
+import mediumExplanation from '../bci_explanations/medium_explanation.md?raw'
+import longExplanation from '../bci_explanations/long_explanation.md?raw'
 import '../styling/bci.css';
+
+const explanations = [
+  {
+    header: 'The Short Version',
+    content: shortExplanation
+  },
+  {
+    header: 'The Readable Version',
+    content: mediumExplanation
+  },
+  {
+    header: 'As Much Detail as I can Muster',
+    content: longExplanation
+  }
+]
 
 const BCIPage = () => {
   const [selectedExplanation, setSelectedExplanation] = useState(0);
 
   const GetExplanation = () => {
-    if (selectedExplanation === 2) return <LongBCIExplanation />;
-    else if (selectedExplanation === 1) return <MidBCIExplanation />;
-    return <ShortBCIExplanation />;
+    const {header, content} = explanations[selectedExplanation]
+    
+    return <div className="explanation">
+      <h2 className="bci-header">{header}</h2>
+      <Markdown>{content}</Markdown>
+    </div>
   };
 
   const GetButtonClass = (index) =>
