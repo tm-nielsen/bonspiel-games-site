@@ -1,4 +1,4 @@
-This section assumes you have seen 'The Readable Version' to avoid repetition and will focus on the use of BCI technology with ***Curl!***. If you want more info on BCI technology itself, [this page][0] or [the Wikipedia article][1] will serve you better.
+<p className='no-indent'>This section assumes you have seen 'The Readable Version' to avoid repetition and will focus on the use of BCI technology with ***Curl!***. If you want more info on BCI technology itself, [this page][0] or [the Wikipedia article][1] will serve you better.</p>
 
 ### Background
 ***Curl!*** depends largely on an external application to facilitate BCI functionality, providing UI and feedback as endpoints for an API. Currently this external application is the Emotiv Launcher, which only supports Emotiv devices. We hope to expand support to as many manufacturers as we can through open source alternatives over the course of development. In either case, the external program provides a similar set of methods to facilitate the established process of training and then using a machine learning model with the user's brain signals as interpreted by the BCI. This is all handled by a custom Unity plugin built off the official Emotiv support, which will go open source as soon as it has been made user-friendly and properly tested.
@@ -14,29 +14,29 @@ Now that the computer has been trained, ***Curl!*** needs to know which category
 A variety of control paradigms exist that make use of the simple one-button we can now make use of. Each of these can be adapted and combined with each other to create interaction mechanisms best fit for any specific program.
 
 #### Switch Access
-multi-select, simple
+<p className='no-indent'>multi-select, simple</p>
 
 Options are presented one after another, with a single option highlighted at any given time. The user performs their mental command as an input when the desired option is selected. Options can be presented in a grid, scrolled through or swapped out. The important thing is that the highlighted option is clearly distinguished from the others by use of bright colours, size, motion, etc. It is extremely helpful to provide a clear visual indicator of when options will switch, allowing users to prep or relax in preparation for a new option. In a slight variation, a switch select approach can be used to select an option along a smooth continuum as a cursor moves across it. This is used in Curl to select the target curve of the stone in two steps. This is the most simple method from a design standpoint, but suffers greatly from a large number of options.
 
 #### Fill Bar
-two options, simple
+<p className='no-indent'>two options, simple</p>
 
 Two options are presented. The primary is a positive selection, for which input must be performed. The other is the default. A bar starts filled partway between the two options. Hold down to fill up, otherwise the bar will slowly empty towards the default option. A selection is made once the bar reaches either end. Only two options can be selected, and the paradigm is best suited to options that fit naturally into the active and default roles, such as "play again" or "return to menu".
 
 #### Multiple Press
-one option, simple
+<p className='no-indent'>one option, simple</p>
 
 A variation on the fill bar. A single option is presented for which input must be performed a set number of times to proceed. Used as a gate to check ability to perform input.
 
 #### Gnomon Clocks
-multi-select, scalable
+<p className='no-indent'>multi-select, scalable</p>
 
 [Paper for nerds][2]
 
 Gnomon clocks are a sort of variation on the switch select paradigm. Multiple objects are presented, each with a clock. The clock has a moving timer hand and a hand set at 12 o'clock. The goal of the user is to perform input when their desired clock aligns both hands. If a match between input and clock is determined, a selection is made. However, if the match is not os sufficient quality, an indicator of potential matches is provided and selection must be done again. Each potential match can be treated as a partial match. If enough partial matches are made on an option, it can be selected.
 
 #### P 300
-multi-select, scalable
+<p className='no-indent'>multi-select, scalable</p>
 
 The p300 refers to a neurological phenomenon that an external stimulus will create a spike in brain activity consistently 300 milliseconds later. Additionally, looking at a selection of flashing options, the user's brain will react much more significantly to items holding their attention. the p300 control paradigm combines these options into an extremely scalable selection mechanism. A set of selections are presented on screen and flashed on random intervals for a period. Following the period, the computer compares each set of flashes to the recorded brain activity, checking if any set matches with a set of spikes in activity, delayed by 300 milliseconds. If a sufficient match is found, the selection is made.
 

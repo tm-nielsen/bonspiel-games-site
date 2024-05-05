@@ -28,10 +28,15 @@ const BCIPage = () => {
 
   const GetExplanation = () => {
     const {header, content} = explanations[selectedExplanation]
+    const options = {
+      overrides: {a: {props: {target: '_blank'}}}
+    }
+    if (selectedExplanation === 0)
+      options.overrides.p = {props: {className: 'no-indent'}}
 
     return <div className="explanation">
       <h2 className="bci-header">{header}</h2>
-      <Markdown>{content}</Markdown>
+      <Markdown options={options}>{content}</Markdown>
     </div>
   };
 
