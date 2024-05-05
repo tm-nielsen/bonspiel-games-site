@@ -1,11 +1,8 @@
 import React, { useState } from 'react';
+import Markdown from 'markdown-to-jsx';
 import { BiShapeTriangle, BiShapeSquare, BiShapePolygon } from 'react-icons/bi';
 import Header from '../components/Header';
-import ShortBCIExplanation from '../components/bci explanations/Short Explanation';
-import MidBCIExplanation from '../components/bci explanations/Mid Explanation';
-import LongBCIExplanation from '../components/bci explanations/Long Explanation';
 
-import Markdown from 'markdown-to-jsx';
 import shortExplanation from '../bci_explanations/short_explanation.md?raw'
 import mediumExplanation from '../bci_explanations/medium_explanation.md?raw'
 import longExplanation from '../bci_explanations/long_explanation.md?raw'
@@ -31,7 +28,7 @@ const BCIPage = () => {
 
   const GetExplanation = () => {
     const {header, content} = explanations[selectedExplanation]
-    
+
     return <div className="explanation">
       <h2 className="bci-header">{header}</h2>
       <Markdown>{content}</Markdown>
@@ -52,10 +49,6 @@ const BCIPage = () => {
         <BiShapeTriangle className={GetButtonClass(0)} onClick={() => setSelectedExplanation(0)} />
         <BiShapeSquare className={GetButtonClass(1)} onClick={() => setSelectedExplanation(1)} />
         <BiShapePolygon className={GetButtonClass(2)} onClick={() => setSelectedExplanation(2)} />
-
-        {/* <button className={GetButtonClass(0)} onClick={() => setSelectedExplanation(0)}><BiShapeTriangle/></button>
-            <button className={GetButtonClass(1)} onClick={() => setSelectedExplanation(1)}><BiShapeSquare/></button>
-            <button className={GetButtonClass(2)} onClick={() => setSelectedExplanation(2)}><BiShapePolygon/></button> */}
       </div>
       <div className="width-container-flat">{GetExplanation()}</div>
       
