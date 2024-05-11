@@ -48,7 +48,7 @@
   align-items: flex-end;
 }
 .mobile-nav-link {
-  font-size: 12em;
+  font-size: 3em;
   text-decoration: none;
 }
 .mobile-nav-link:visited {
@@ -66,11 +66,11 @@
   width: fit-content;
   color: darkgray;
 
-  font-size: 2.25em;
+  font-size: 1.1em;
   text-decoration: none;
   margin-top: 0.5em;
   margin-right: auto;
-  margin-left: 1em;
+  margin-left: 0.5em;
   white-space: nowrap;
 }
 .mobile-nav-header:hover {
@@ -80,7 +80,7 @@ h1.mobile-nav-header {
   margin: auto;
 }
 .mobile-nav-logo {
-  width: 5em;
+  width: 2.5em;
   height: auto;
   margin-right: 2vw;
 }

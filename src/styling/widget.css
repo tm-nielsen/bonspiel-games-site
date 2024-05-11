@@ -13,25 +13,22 @@
 .widget-header {
   display: flex;
   flex-direction: row;
-  font-size: calc(18px + 1vw);
+  font-size: 1.25em;
   font-weight: normal;
 }
 
 b.head {
   color: aliceblue;
-  margin: calc(12px + 0.25vw) 0 calc(6px + 0.5vw) 0;
+  margin: 0.5em 0 0.25em 0;
 }
 b.tail {
   color: #999;
-  margin: calc(12px + 0.25vw) 0 calc(6px + 0.5vw) calc(4px + 0.25vw);
+  margin: 0.5em 0 0.25em 0.125em;
 }
 
 .desc {
-  font-size: calc(8px + 0.8vw);
-  /* font-size: min(2em, 20px); */
   color: #c9c9c9;
   line-height: calc(16px + 1vw);
-  /* line-height: min(1.5em, 24px) */
 }
 .logo {
   float: left;
@@ -43,8 +40,7 @@ b.tail {
 .wishlist-container {
   display: flex;
   position: absolute;
-  right: 1em;
-  font-size: 1.25em;
+  right: 0.5em;
 
   color: #b8dc89;
   border: 1px solid #232a0e;
@@ -54,14 +50,12 @@ b.tail {
 }
 .date {
   float: left;
-  font-size: 1.25em;
-  margin: auto 0.2em;
+  margin: auto 0 auto 0.25em;
 }
 .wishlist-button {
-  margin-inline: 0.5em;
+  margin-inline: 0.25em;
 }
 .wishlist-button-content {
-  font-size: 1.5em;
   font-weight: auto;
   color: #d2efa9;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);

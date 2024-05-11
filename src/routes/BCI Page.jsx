@@ -45,11 +45,7 @@ const BCIPage = () => {
 
   return (
     <div>
-      <Header className="" title={'ABOUT BCI'} />
-      <br />
-      <br />
-      <br />
-      <br />
+      <Header title='ABOUT BCI' />
       <div className="option-container">
         <BiShapeTriangle className={GetButtonClass(0)} onClick={() => setSelectedExplanation(0)} />
         <BiShapeSquare className={GetButtonClass(1)} onClick={() => setSelectedExplanation(1)} />

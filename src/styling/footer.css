@@ -1,17 +1,17 @@
 .footer {
   display: flex;
   justify-content: space-around;
-  margin: 3em auto 8em auto;
+  margin: 1em auto 1.5em auto;
   max-width: 1080px;
 }
 
 .footer-icon-box {
   padding: 1em;
-  /* margin-inline: 6em; */
 }
 
 .footer-icon {
-  height: 12em;
+  height: 12vw;
+  max-height: 100px;
   width: auto;
   font-display: none;
   color: darkgray;

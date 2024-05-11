@@ -10,7 +10,6 @@
   flex-direction: column;
   align-items: center;
   font-weight: 600;
-  font-size: 2em;
 }
 
 .nav-bg {
@@ -28,7 +27,7 @@
   width: fit-content;
   color: darkgray;
 
-  font-size: 1.4em;
+  font-size: 1.25em;
   text-decoration: none;
   justify-self: baseline;
   margin-top: auto;
