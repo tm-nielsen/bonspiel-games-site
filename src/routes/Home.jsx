@@ -37,12 +37,11 @@ const Home = () => {
           loop
           muted
           playsInline
-          alt="showcase of gameplay"
+          aria-label="showcase of gameplay"
           className="section-image left"
         >
-          <source src={gameplayWebm} type="video/webm" />
-          <source src={gameplayMp4} type="video/mp4" />
-          Your browser does not support the video tag
+          <source src={gameplayWebm} type="video/webm" aria-hidden/>
+          <source src={gameplayMp4} type="video/mp4" aria-hidden/>
         </video>
         <p className="section-body">
           It’s a wacky mishmash of strategical sporting action that up to 4 players can enjoy. Slide ahead of your foes with a foolproof strategy. Weave each stone carefully down the ice to land victory in your orbit. Astound the crowd with explodinating, zappifying, and mind-discombobulating uber-cool super-stones! What’s that? Curling doesn’t have explosions? Sure, your primitive Earth curling might not, but <Title /> does!
@@ -87,12 +86,11 @@ const Home = () => {
           loop
           muted
           playsInline
-          alt="users navigating switch accessible menus"
+          aria-label="users navigating switch accessible menus"
           className="section-image left"
         >
           <source src={bciWebm} type="video/webm" />
           <source src={bciMp4} type="video/mp4" />
-          Your browser does not support the video tag
         </video>
         <p className="section-body">
           Menus and UI systems designed for use via switch-scanning selection, compatible with simple BCI alternative access.
@@ -151,7 +149,10 @@ const Home = () => {
         <div className="scroll-target" id="team" />
         <h1 className="section-header">The Team</h1>
         <p className="section-body-small">
-          We are a small collective of artists, musicians and programmers that seek to bring the medium of video games to those who might otherwise be unable to experience it. <br /> <br /> Through accessibility led design and cutting-edge technology, we want to expand the definition of who gets to play.
+          We are a small collective of artists, musicians and programmers that seek to bring the medium of video games to those who might otherwise be unable to experience it.
+        </p>
+        <p className="section-body-small">
+          Through accessibility led design and cutting-edge technology, we want to expand the definition of who gets to play.
         </p>
       </Section>
     </div>

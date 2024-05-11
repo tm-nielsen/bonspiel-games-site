@@ -6,12 +6,12 @@ const SteamWidget = () => {
   return (
     <div className="widget">
       <div className="widget-header">
-        <h5 className="head">Curl! </h5>
-        <h5 className="tail">on Steam</h5>
+        <b className="head">Curl! </b>
+        <b className="tail">on Steam</b>
       </div>
       <div className="desc">
         <a href="https://store.steampowered.com/app/2100970/Curl/" target="_blank" rel="noreferrer">
-          <img src={capsule} alt="small logo" className="logo" />
+          <img src={capsule} alt="Curl logo" className="logo" />
         </a>
         <p className="desc">
           The beloved and captivating sport is spreading to new worlds! Take up the broom to challenge your friends locally or online to a competition of wit, teamwork, and silliness in this first-of-its-kind game, built for accessibility with brain-computer interface integration.
@@ -19,7 +19,7 @@ const SteamWidget = () => {
       </div>
       <div className="wishlist-container">
         <div className="date">
-          <h2 className="date">Available: Late 2022</h2>
+          <b className="date">Available: Late 2022</b>
         </div>
         <div className="wishlist-button">
           {/* <form action="https://store.steampowered.com//api/addtowishlist/" method='POST' target='_blank'>

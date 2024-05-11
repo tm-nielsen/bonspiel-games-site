@@ -23,6 +23,8 @@ const MobileNav = () => {
       <button
         className={`nav-button${expanded ? ' nav-button-expanded' : ''}`}
         onClick={() => setExpanded(!expanded)}
+        aria-label="menu dropdown"
+        aria-expanded={expanded}
       >
         <BiMenu className="nav-button-icon" />
       </button>
