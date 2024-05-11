@@ -5,11 +5,16 @@
   justify-content: space-evenly;
 }
 
+button {
+  display: flex;
+  background: none;
+  border: none;
+}
+
 .explanation-option {
   font-size: min(10em, 20vw);
   max-width: 160px;
   font-weight: normal;
-  height: auto;
   background-color: #0000;
   color: darkgray;
   transition: all 0.25s ease-out;
