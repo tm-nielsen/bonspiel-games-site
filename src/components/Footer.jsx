@@ -10,6 +10,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
         className="footer-icon-box"
+        aria-label="Curl on Steam"
       >
         <FaSteam className="footer-icon" />
       </a>
@@ -18,6 +19,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
         classname="footer-icon-box"
+        aria-label="email"
       >
         <FaEnvelope className="footer-icon" />
       </a>
@@ -26,6 +28,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
         className="footer-icon-box"
+        aria-label="Twitter"
       >
         <FaTwitter className="footer-icon" />
       </a>
@@ -34,6 +37,7 @@ const Footer = () => {
         target="_blank"
         rel="noreferrer"
         className="footer-icon-box"
+        aria-label='Discord'
       >
         <FaDiscord className="footer-icon" />
       </a>

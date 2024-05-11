@@ -16,11 +16,12 @@
   font-size: calc(18px + 1vw);
   font-weight: normal;
 }
-h5.head {
+
+b.head {
   color: aliceblue;
   margin: calc(12px + 0.25vw) 0 calc(6px + 0.5vw) 0;
 }
-h5.tail {
+b.tail {
   color: #999;
   margin: calc(12px + 0.25vw) 0 calc(6px + 0.5vw) calc(4px + 0.25vw);
 }
