@@ -47,13 +47,22 @@ const BCIPage = () => {
     <div>
       <Header title='ABOUT BCI' />
       <div className="option-container">
-        <button onClick={() => setSelectedExplanation(0)} aria-label='select simple bci explanation'>
+        <button onClick={() => setSelectedExplanation(0)}
+          className='explanation-option-button'
+          aria-label='select simple bci explanation'
+        >
           <BiShapeTriangle className={GetButtonClass(0)} />
         </button>
-        <button onClick={() => setSelectedExplanation(1)} aria-label='select practical bci explanation'>
+        <button onClick={() => setSelectedExplanation(1)}
+          className='explanation-option-button'
+          aria-label='select practical bci explanation'
+        >
           <BiShapeSquare className={GetButtonClass(1)} />
         </button>
-        <button onClick={() => setSelectedExplanation(2)} aria-label='select complex bci explanation'>
+        <button onClick={() => setSelectedExplanation(2)}
+          className='explanation-option-button'
+          aria-label='select complex bci explanation'
+        >
           <BiShapePolygon className={GetButtonClass(2)} />
         </button>
       </div>

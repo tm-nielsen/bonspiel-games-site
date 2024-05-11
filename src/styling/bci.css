@@ -5,7 +5,7 @@
   justify-content: space-evenly;
 }
 
-button {
+.explanation-option-button {
   display: flex;
   background: none;
   border: none;
