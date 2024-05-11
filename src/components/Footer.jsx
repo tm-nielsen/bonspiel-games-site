@@ -18,7 +18,7 @@ const Footer = () => {
         href="mailto: braincurling@gmail.com"
         target="_blank"
         rel="noreferrer"
-        classname="footer-icon-box"
+        className="footer-icon-box"
         aria-label="email"
       >
         <FaEnvelope className="footer-icon" />

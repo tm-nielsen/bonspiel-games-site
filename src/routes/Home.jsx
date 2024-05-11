@@ -8,20 +8,24 @@ import trailerWebm from '../images/trailer.webm';
 import trailerMp4 from '../images/trailer.mp4';
 import gameplayWebm from '../images/gameplay.webm';
 import gameplayMp4 from '../images/gameplay.mp4';
+import gameplayStaticImage from '../images/gameplay-static.png'
 import mapGif from '../images/map select.gif';
+import mapStaticImage from '../images/map select-static.png'
 import bciWebm from '../images/team_and_char.webm';
 import bciMp4 from '../images/team_and_char.mp4';
+import bciStaticImage from '../images/switches.png'
 import trainingIm from '../images/side-by-side-training.png';
 import titleLogo from '../images/shiny logo.png';
-// import trainingIm from '../images/side-by-side-training.png'
 
 const Home = () => {
+  const shouldReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
   return (
     <div className="home">
       <Header text={''} backgroundImage={titleLogo} id="header" />
       <Section>
         <video controls alt="gameplay trailer" className="trailer">
-          <source src={trailerWebm} type="video/wemb" />
+          <source src={trailerWebm} type="video/webm" />
           <source src={trailerMp4} type="video/mp4" />
         </video>
       </Section>
@@ -31,18 +35,23 @@ const Home = () => {
         </p>
       </Section>
       <Section>
-        {/* <h1 className="section-header">Curling in Space!?!</h1> */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          aria-label="showcase of gameplay"
-          className="section-image left"
-        >
-          <source src={gameplayWebm} type="video/webm" aria-hidden/>
-          <source src={gameplayMp4} type="video/mp4" aria-hidden/>
-        </video>
+        {shouldReduceMotion? <img
+            src={gameplayStaticImage}
+            alt='showcase of gameplay'
+            className='section-image left'
+          />
+          :<video
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-label="showcase of gameplay"
+            className="section-image left"
+          >
+            <source src={gameplayWebm} type="video/webm" aria-hidden/>
+            <source src={gameplayMp4} type="video/mp4" aria-hidden/>
+          </video>
+        }
         <p className="section-body">
           It’s a wacky mishmash of strategical sporting action that up to 4 players can enjoy. Slide ahead of your foes with a foolproof strategy. Weave each stone carefully down the ice to land victory in your orbit. Astound the crowd with explodinating, zappifying, and mind-discombobulating uber-cool super-stones! What’s that? Curling doesn’t have explosions? Sure, your primitive Earth curling might not, but <Title /> does!
         </p>
@@ -50,7 +59,11 @@ const Home = () => {
 
       <Section>
         <h1 className="section-header">Strange Places and Silly Faces</h1>
-        <img src={mapGif} alt="showcase of the different maps" className="section-image" />
+        <img
+          src={shouldReduceMotion? mapStaticImage: mapGif}
+          alt="showcase of the different maps"
+          className="section-image"
+        />
         <p className="section-body">
           The galaxy is a huge and wonderfully weird place. A zany lineup of competitors face off on all manner of slick sheets from across the universe! Try to hit the button on the tongue of a gigantic, homely space worm, or speed through the cosmos on the front of a comet!
         </p>
@@ -81,17 +94,23 @@ const Home = () => {
         <div className="right-container">
           <h1 className="section-header">Switch Accessible Menus and UI</h1>
         </div>
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          aria-label="users navigating switch accessible menus"
-          className="section-image left"
-        >
-          <source src={bciWebm} type="video/webm" />
-          <source src={bciMp4} type="video/mp4" />
-        </video>
+        {shouldReduceMotion? <img
+            src={bciStaticImage}
+            alt='users navigating switch accessible menu'
+            className='section-image left'
+          />
+          :<video
+            autoPlay
+            loop
+            muted
+            playsInline
+            aria-label="users navigating switch accessible menus"
+            className="section-image left"
+          >
+            <source src={bciWebm} type="video/webm" />
+            <source src={bciMp4} type="video/mp4" />
+          </video>
+        }
         <p className="section-body">
           Menus and UI systems designed for use via switch-scanning selection, compatible with simple BCI alternative access.
         </p>

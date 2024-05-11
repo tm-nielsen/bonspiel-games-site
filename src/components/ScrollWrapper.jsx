@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 const ScrollWrapper = (props) => {
   const location = useLocation();
   const [previousLocation, setPreviousLocation] = useState(location);
+  const shouldReduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
   useEffect(() => {
     var hash = location.hash;
@@ -11,7 +12,8 @@ const ScrollWrapper = (props) => {
     else hash = hash.slice(1);
 
     var scrollOptions = { behavior: 'auto' };
-    if (location.pathname === previousLocation.pathname) scrollOptions.behavior = 'smooth';
+    if (location.pathname === previousLocation.pathname && !shouldReduceMotion)
+      scrollOptions.behavior = 'smooth';
 
     document.getElementById(hash).scrollIntoView(scrollOptions);
 
