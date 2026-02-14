@@ -15,22 +15,13 @@ const Footer = () => {
         <FaSteam className="footer-icon" />
       </a>
       <a
-        href="mailto: braincurling@gmail.com"
+        href="mailto: contact@bonspiel.games"
         target="_blank"
         rel="noreferrer"
         className="footer-icon-box"
         aria-label="email"
       >
         <FaEnvelope className="footer-icon" />
-      </a>
-      <a
-        href="https://twitter.com/bonspiel_games"
-        target="_blank"
-        rel="noreferrer"
-        className="footer-icon-box"
-        aria-label="Twitter"
-      >
-        <FaTwitter className="footer-icon" />
       </a>
       <a
         href="https://discord.gg/FBn84MpCfS"
